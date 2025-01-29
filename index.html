@@ -1,236 +1,78 @@
-<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <link rel="stylesheet" href="snow.css">
     <link rel="stylesheet" href="Galeria.css">
     <link rel="stylesheet" href="body.css">
     <link rel="stylesheet" href="estilos.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIDA DE LOBO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden; /* Evita el desbordamiento horizontal */
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        header img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            padding: 15px;
-        }
-
-        .navbar a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-
-        .navbar a:hover {
-            background-color: rgb(127, 219, 255);
-        }
-
-        .mobile-menu-btn {
-            display: none;
-            font-size: 20px;
-            cursor: pointer;
-            position: fixed;
-            top: 15px;
-            left: 15px;
-            color: #333;
-            background-color: #fff;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-            z-index: 1001;
-        }
-
-        .mobile-menu {
-            height: 100vh;
-            width: 0;
-            max-width: 35%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: rgb(51, 72, 102);
-            color: #fff;
-            overflow-x: hidden;
-            transition: 0.3s;
-            display: flex;
-            flex-direction: column;
-            padding-top: 60px;
-            z-index: 1000;
-        }
-
-        .mobile-menu a {
-            padding: 15px 25px;
-            text-decoration: none;
-            font-size: 18px;
-            color: #fff;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .mobile-menu a:hover {
-            background-color: rgb(51, 72, 102);
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 20px;
-            right: 25px;
-            font-size: 36px;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        .main-content {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr); /* Tres columnas por fila */
-            gap: 50px; /* Menos espacio entre columnas */
-            padding: 20px;
-        }
-
-        .article {
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            height: 500px; /* Aumenta la altura de los artículos */
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .article:hover {
-            transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
-        }
-
-        .article img {
-            width: 100%;
-            height: 300px; /* Imágenes más altas */
-            object-fit: cover; /* Mantener la proporción de la imagen */
-        }
-
-        .article h2 {
-            font-size: 1.2em; /* Hacer los títulos más pequeños */
-            color: #333;
-            margin: 10px 0;
-        }
-
-        .article p {
-            font-size: 0.9em; /* Reducir tamaño de los textos */
-            color: #555;
-        }
-        /* Estilo para pantallas pequeñas (móviles) */
-        @media (max-width: 768px) {
-            .navbar {
-                display: none;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .mobile-menu.open {
-                width: 250px;
-            }
-
-            .main-content {
-                grid-template-columns: 1fr; /* En móviles, los artículos ocupan el 100% del ancho */
-            }
-
-            .article img {
-                height: 280px; /* Hacer las imágenes aún más altas en móviles */
-            }
-
-            .article h2 {
-                font-size: 1em; /* Reducir más el tamaño del título en móviles */
-            }
-
-            .article p {
-                font-size: 0.8em; /* Reducir más el tamaño del texto en móviles */
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1><img height="350px" width="450px" src="lobonavid.png" alt="Logotipo"></h1>
+            <h1><img height="2000px"width="2000px" src="lobo.png" Logotipo></h1>
         </header>
         <div class="navbar">
             <nav class="nav1">
                 <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">ARTICULOS</a></li>
-                    <li><a href="#">ORIGEN</a></li>
+                    <li><a href="pagina222.html">INICIO</a></li>
+                    <li><a href="pagina222.html">ARTICULOS</a></li>
+                    <li><a href="Origen.html">ORIGEN</a></li>
                     <li><a href="#">COMPRA</a></li>
-                    <li><a href="#">COMUNIDAD</a></li>
+                    <li><a href="https://www.menti.com/alf63r2axfau">COMUNIDAD</a></li>
                     <li><a href="#">CRÉDITOS</a></li>
-                    <li><a href="#">COMENTARIOS</a></li>
+                    <li><a href="opo.html">COMENTARIOS</a></li>
                 </ul>
             </nav>
         </div>
         <button class="mobile-menu-btn" onclick="toggleMobileMenu()">&#9776; Menú</button>
         <div class="mobile-menu" id="mobileMenu">
             <span class="close-btn" onclick="toggleMobileMenu()"></span>
-            <a href="#"><i class="fas fa-home"></i> Inicio</a>
+            <a href="Vidadelobo.html"><i class="fas fa-home"></i> Inicio</a>
             <a href="#"><i class="fas fa-file-alt"></i> Artículos</a>
-            <a href="#"><i class="fas fa-info"></i> Origen</a>
-            <a href="#"><i class="fas fa-shopping-cart"></i> Compra</a>
-            <a href="#"><i class="fas fa-users"></i> Comunidad</a>
+            <a href="Origen.html"><i class="fas fa-info"></i> Origen</a>
+            <a href="Compra.html"><i class="fas fa-shopping-cart"></i> Compra</a>
+            <a href="https://www.menti.com/alf63r2axfau"><i class="fas fa-users"></i> Comunidad</a>
             <a href="#"><i class="fas fa-credit-card"></i> Créditos</a>
+            <a href="opo.html"><i class="fa fa-envelope-open"></i> Comentarios</a>
         </div>
         <div class="main-content">
             <div class="article">
-                <a href="libros.html" style="color: black;">
+                <a href="libros.html" style="color: rgb(39, 52, 71);">
                     <img src="libros.jpg" alt="libros">
                     <h2>TERTURIA LITERARIA</h2>
                     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
                 </a>
             </div>
             <div class="article">
-                <a href="Libros.html" style="color: black;">
+                <a href="Libros.html" style="color: rgb(39, 52, 71);">
                     <img src="navidad.jpg" alt="xmas">
                     <h2>EVENTO NAVIDAD</h2>
                     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
                 </a>
             </div>
             <div class="article">
-                <a href="poemas.html" style="color: black;">
+                <a href="poemas.html" style="color: rgb(39, 52, 71);">
                     <img src="poema.jpg" alt="poema">
                     <h2>POEMAS SECU</h2>
                     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
                 </a>
             </div>
             <div class="article">
-                <a href="libros.html" style="color: black;">
+                <a href="libros.html" style="color: rgb(39, 52, 71);">
                     <img src="tips.png" alt="libros">
                     <h2>TIPS ESTUDIO</h2>
                     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
                 </a>
             </div>
             <div class="article">
-                <a href="libros.html" style="color: black;">
+                <a href="libros.html" style="color: rgb(39, 52, 71);">
                     <img src="inte.jpg" alt="xmas">
                     <h2>ACERTIJOS</h2>
                     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
                 </a>
             </div>
             <div class="article">
-                <a href="reportaje.html" style="color: black;">
+                <a href="reportaje.html" style="color: rgb(39, 52, 71);">
                     <img src="repor.jpg" alt="reportaje">
                     <h2>REPORTAJE SEMANAL</h2>
                     <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor cubilia nulla lorem ante est litora morbi. Erat venenatis nulla maecenas primis viverra convallis, aenean massa sem. Ut praesent vitae sollicitudin tempus placerat amet. Commodo aliquet eleifend proin bibendum gravida habitant iaculis risus.</p>
@@ -248,6 +90,6 @@
             mobileMenu.classList.toggle("open");
         }
     </script>
+    
 </body>
 </html>
-
